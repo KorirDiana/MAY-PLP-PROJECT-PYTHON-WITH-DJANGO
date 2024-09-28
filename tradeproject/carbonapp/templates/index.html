@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Reduction Services</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Carbon Footprint Reduction Services</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'services' %}">Services</a></li>
+                <li><a href="{% url 'analysis' %}">Analysis</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
+                <li><a href="{% url 'signup' %}">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>Our services help reduce carbon footprints by optimizing trade routes.</p>
+        <section>
+            <h2>About Us</h2>
+            <p>At Carbon Footprint Reduction Services, we are committed to promoting sustainability in global trade. Our expert team analyzes shipping routes and identifies innovative solutions to minimize emissions while maintaining efficiency.</p>
+        </section>
+        <section>
+            <h2>Our Mission</h2>
+            <p>We strive to empower businesses to make environmentally friendly choices. By leveraging advanced analytics and industry insights, we help companies lower their carbon footprints, contribute to a healthier planet, and improve their bottom line.</p>
+        </section>
+        <section>
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li>Expert Analysis: Our team of professionals uses cutting-edge tools to evaluate and optimize trade routes.</li>
+                <li>Customized Solutions: We tailor our services to meet the unique needs of your business.</li>
+                <li>Commitment to Sustainability: Join us in making a positive impact on the environment.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Contact us at info@carbonreduction.com</p>
+    </footer>
+</body>
+</html>

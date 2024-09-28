@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Emissions Analysis</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <style>
+        .image-container {
+            display: flex;
+            justify-content: center; /* Center images horizontally */
+            align-items: center; /* Center images vertically */
+        }
+        .image-container img {
+            width: 300px; /* Set a fixed width for the PNG */
+            height: 200px; /* Set a fixed height for the PNG */
+            object-fit: cover; /* Maintain aspect ratio and fill the box */
+            margin: 0 10px; /* Space between images */
+        }
+        .large-image {
+            width: 400px; /* Set a fixed width for the JPG */
+            height: 400px; /* Set a fixed height for the JPG */
+            object-fit: cover; /* Maintain aspect ratio and fill the box */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Carbon Emissions Analysis</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'services' %}">Services</a></li>
+                <li><a href="{% url 'analysis' %}">Analysis</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
+                <li><a href="{% url 'signup' %}">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            {{ graph_html | safe }}
+        </div>
+
+        <div>
+            <p>This graph illustrates the carbon emissions associated with various shipping routes. Understanding these emissions is crucial for identifying areas for improvement in sustainability efforts.
+            </p><div class="image-container">
+            <img src="{% static 'download.png' %}" alt="Description of PNG image">
+            <img src="{% static 'traderoutes.jpg' %}" class="large-image" alt="Description of JPG image">
+        </div>
+        <div>
+            <p>
+                
+            </p>
+        </div>
+            <p>
+            Identifying Optimal Routes                                                                                                                
+            Cost-Benefit Analysis: Calculate total costs (fuel, time, emissions) for each route and compare.
+
+            Emission Analysis: Determine the total CO2 emissions per route using regression coefficients from your model to predict emissions based on the route's characteristics.
+
+            Sensitivity Analysis: Assess how changes in key variables (like speed or fuel prices) affect overall costs and emissions, allowing you to identify the most critical factors influencing route optimization.
+
+            Scenario Planning: Use different hypothetical scenarios (e.g., changes in fuel prices, regulatory impacts) to see how routes perform under varying conditions.
+
+            By leveraging these variables and methods, you can create a robust framework for predicting and optimizing ship routes for better efficiency and lower emissions.
+            </p>
+        </div>
+        
+    </main>
+    <footer>
+        <p>Contact us at info@carbonreduction.com</p>
+    </footer>
+</body>
+</html>

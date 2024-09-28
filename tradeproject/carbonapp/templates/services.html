@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Carbon Footprint Reduction</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Our Services</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'services' %}">Services</a></li>
+                <li><a href="{% url 'analysis' %}">Analysis</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
+                <li><a href="{% url 'signup' %}">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Carbon Footprint Reduction Services</h2>
+            <p>We provide comprehensive services to help businesses reduce their carbon footprints by optimizing trade routes. Our services include:</p>
+            <ul>
+                <li><strong>Trade Route Optimization:</strong> We analyze and optimize global and regional trade routes to minimize carbon emissions, reduce fuel consumption, and promote sustainable practices.</li>
+                <li><strong>Carbon Emissions Analysis:</strong> We provide detailed carbon emissions reports for various trade routes, helping businesses identify high-impact areas for improvement.</li>
+                <li><strong>Consultation Services:</strong> Our expert consultants work with businesses to implement sustainable practices and strategies aligned with SDG 12 (Responsible Consumption and Production).</li>
+                <li><strong>Custom Solutions:</strong> We offer tailor-made solutions to fit your specific business needs and goals.</li>
+            </ul>
+            <p>Contact us today to learn how we can help you make your trade operations more sustainable and environmentally friendly.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Contact us at info@carbonreduction.com | Phone: +254 700 000000</p>
+    </footer>
+</body>
+</html>
